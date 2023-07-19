@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Dhawan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(2, 2, 42, 0.981);
+            color: white;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 52px;
+            background-color: rgb(10, 34, 71);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: azure;
+
+        }
+
+        nav li a:hover {
+            color: rgb(108, 108, 227);
+            font-size: 1.02rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 2.7rem;
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(140, 85, 192);
+            color: aliceblue;
+            border: 2px solid white;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+
+
+        }
+
+        .rightsection img {
+
+            width: 75%;
+            height: 75%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: rgb(163, 99, 223);
+
+        }
+
+        #element {
+            color: rgb(126, 126, 248);
+
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            color: #edfaff;
+            margin-bottom: 20px;
+        }
+
+        .heading span {
+            color: #16a6fa;
+        }
+
+        .contact form {
+            max-width: 30rem;
+            margin: 1rem auto;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact form .input-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact form .input-box input,
+        .contact form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            color: whitesmoke;
+            background: rgb(90, 84, 84);
+            border-radius: 1rem;
+            margin: 0.4rem 0;
+        }
+
+        .contact .btn {
+            display: inline-block;
+            padding: 1.2rem 2rem;
+            font-size: 0.9rem;
+            background-color: rgb(90, 84, 84);
+            color: rgb(0, 169, 242);
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact .btn:hover {
+            background-color: rgb(124, 71, 174);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Saksham's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Saksham</span>
+
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+
+
+
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+
+        </section>
+
+
+
+        <!-- Contact Me Wala Code -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+        <!-- <section class="secondsection">
+    <h1>Past Experience</h1>
+</section> -->
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Ethical Hacker'],
+            typeSpeed: 125,
+        });
+    </script>
+</body>
+
+</html>
